@@ -9,6 +9,8 @@ import Home from './pages/Home';
 import AddEdit from './pages/AddEdit';
 import About from './pages/About';
 import Header from './components/Header';
+import dotenv from  'dotenv'
+
 
 function App() {
   return (

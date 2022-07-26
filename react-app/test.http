@@ -1,10 +1,11 @@
-POST http://localhost:8080/user 
+post http://localhost:8080/user 
 
 Content-Type: application/json
 
 
-    {
+{
         "name": "Jonathan Yanez",
         "email": "jonathanyanez02@gmail.com",
         "contact": "7184925117"
-    }
+ }
+

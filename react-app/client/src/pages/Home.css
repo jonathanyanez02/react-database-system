@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 #root{
-  background-color: #f8f8f8;
+  background-color: #26102ec8;
+}
+
+.styled-table tbody tr {
+  background-color: #f5f5f5;
+}
+.tbody{
+  box-shadow: 0px 0px 1px black;
 }
 .styled-table {
     border-collapse: collapse;
