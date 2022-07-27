@@ -6,6 +6,8 @@ import User1 from "../models/user.js";
 const router = express.Router();
 
 let users = [];
+
+
 let User = User1;
 
 //////
@@ -29,7 +31,7 @@ export const POST = async (req, res) => {
 
             console.log(data)
         })
-        
+
         .catch(error => {
             res.json(error)
         })
