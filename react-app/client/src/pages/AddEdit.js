@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams,  } from "react-router-dom";
+import { useNavigate, useParams, } from "react-router-dom";
 import "./AddEdit.css";
 import { toast } from "react-toastify";
 import axios from "axios";
 
 
-
+//SETS INITIAL STATE TO 3 VARIABLE SET AS A STRING
 const initialState = {
   name: "",
   email: "",
- contact: "",
+  contact: "",
 };
+
 
 const AddEdit = () => {
   const [state, setState] = useState(initialState);
