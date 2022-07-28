@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import AddEdit from './pages/AddEdit';
 import About from './pages/About';
 import Header from './components/Header';
-import dotenv from  'dotenv'
+
 
 
 function App() {

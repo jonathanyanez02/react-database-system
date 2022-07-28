@@ -1,19 +1,18 @@
+/////ROUTER FOR CONTROLLER.JS FILE/////
 import express from "express";
-import { getUsers, createUser, getUser, deleteUser, updateUser, POST  } from "../controller/users.js"
-//import Userdb from '../models/user.js'
+import { getUsers, getUser, deleteUser, updateUser, postUser  } from "../controller/users.js" //IMPORTS CONTROLLER FUNCTIONS FROM CONTROLLER
+
 
 const router = express.Router(); //SETS EXPRESS ROUTER AS router
 
-router.get("/users", getUsers);
-//router.post("/user", createUser); // Old route
-router.get("/user/:id", getUser);
-router.put("/user/:id", updateUser);
-router.delete("/user/:id", deleteUser);
-router.post("/user", POST);
-
-//FOR MONGO DB
-//router.post("/user",POST);
+router.get("/users", getUsers);     //GETS ALL USERS
+router.post("/user", postUser);     //CREATES A USER
+router.get("/user/:id", getUser);   //GETS SINGLE USER BY ID 
+router.put("/user/:id", updateUser);  //UPDATES USER BY ID
+router.delete("/user/:id", deleteUser); //DELETES USER BY ID
 
 
 
-export default router;
+
+
+export default router; //EXPORTS THE ROUTER

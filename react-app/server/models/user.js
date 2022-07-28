@@ -1,14 +1,14 @@
 import mongoose from "mongoose";
 
-//FOR MONGODB
+//CREATES A SCHEMA FOR OUR DATABASE CONNECTION
 const User =  new  mongoose.Schema({
     name :{type : String, required: true},
     email :{type: String, required: true},
     contact :{type: Number, required: true},
     })
 
-//export default mongoose.model('User',  User);
 
+//SETS THE 'User' SCHEMA AS 'User1"
  const User1 =mongoose.model('User',  User);
 
  export default User1 

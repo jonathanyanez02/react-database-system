@@ -44,6 +44,7 @@ const Home = () => {
             <th style={{ textAlign: "center" }}>Email</th>
             <th style={{ textAlign: "center" }}>Contact</th>
             <th style={{ textAlign: "center" }}>Action</th>
+
           </tr>
         </thead>
         <tbody>
@@ -55,17 +56,18 @@ const Home = () => {
                   <td>{item.name}</td>
                   <td>{item.email}</td>
                   <td>{item.contact}</td>
+
                   <td>
-                    <Link to={`/update/${item.id}`}>
+                    <Link to={`/update/${item._id}`}>
                       <button className="btn btn-edit">Edit</button>
                     </Link>
                     <button
                       className="btn btn-delete"
-                      onClick={() => onDeleteUser(item.id)}
+                      onClick={() => onDeleteUser(item._id)}
                     >
                       Delete
                     </button>
-                    
+
                   </td>
                 </tr>
               );
