@@ -1,0 +1,30 @@
+version: "3"
+services:
+  app:
+    container_name: reactimage
+    image: reactimage
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+    
+
+  server:
+    container_name: serverimage
+    image: serverimage
+    ports:
+      - '8080:8080'
+    
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - '27017:27017'
+    
+    
+
+ 
+  

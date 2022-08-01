@@ -3,7 +3,6 @@ import dotenv from 'dotenv';//ALLOWS FOR USE OF ENVIRONMENT FILES FROM .ENV
 import express  from "express";//IMPORTS EXPRESS MODULE
 import morgan from 'morgan';//LOGS REQUESTS FROM SERVER
 import cors from "cors";//MIDDLEWEAR THAT ALLOWS HTTP REQUESTS FOR WEB API
-import userRoutes from "./routes/users.js "
 import router from "./routes/users.js "//IMPORTS ROUTES FOLDER
 import connectDB from "./database/connection.js";//IMPORTS CONNECTIONS FOLDER
 
